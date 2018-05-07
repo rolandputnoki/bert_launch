@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <node pkg="bert_tf" type="bert_tf_node" name="bert_tf_sender" output="screen" />
+
+  <node pkg="bert_stm_handler" type="spi_handler" name="bert_stm_handler" output="screen" />
+
+</launch>

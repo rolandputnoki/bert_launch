@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+  <include file="$(find bert_planner)/launch/bert_planner.launch" />
+  <include file="$(find bert_launch)/launch/hector_mapping.launch" />
+
+  <node pkg="bert_tf" type="bert_tf_node" name="bert_tf"/>
+
+</launch>
