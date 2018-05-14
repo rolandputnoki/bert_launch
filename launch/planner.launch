@@ -7,12 +7,12 @@
 
   <!-- Launch the grid map visualizer -->
   <node pkg="grid_map_visualization" type="grid_map_visualization" name="grid_map_visualization" output="screen">
-    <rosparam command="load" file="$(find bert_planner)/config/gridmap_visualization_rviz.yaml" />
+    <rosparam command="load" file="$(find path_planner)/config/gridmap_visualization_rviz.yaml" />
   </node>
 
 
   <!-- Launch RViz with the custom configuration -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find bert_planner)/config/gridmap_visualization.rviz" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find path_planner)/config/gridmap_visualization.rviz" />
 
 
   <include file="$(find bert_launch)/launch/hector_mapping.launch" />
